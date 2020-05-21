@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo entregador!"
+        android:textColor="#000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite seus dados pessoais."
+        android:textColor="#555"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:hint="Nome"
+        android:inputType="text"
+        android:textColorHint="#bbb"
+        android:background="@drawable/rounded_background_input"/>
+
+    <EditText
+        android:id="@+id/cpfInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:hint="CPF"
+        android:maxLength="14"
+        android:inputType="number"
+        android:textColorHint="#bbb"
+        android:background="@drawable/rounded_background_input"/>
+
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:hint="Telefone"
+        android:maxLength="15"
+        android:inputType="phone"
+        android:textColorHint="#bbb"
+        android:background="@drawable/rounded_background_input"/>
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:hint="E-mail"
+        android:inputType="textWebEmailAddress"
+        android:textColorHint="#bbb"
+
+        android:background="@drawable/rounded_background_input"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkboxView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_marginTop="8dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Li e concordo com os Termos e Condições de uso. Os termos estarão disponíveis para consulta dentro do app."
+            android:textColor="#555"
+            android:textSize="17dp"
+            android:layout_marginLeft="15dp"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:text="CONFIRMAR"
+        android:background="@drawable/rounded_background_button"/>
+
+</LinearLayout>
